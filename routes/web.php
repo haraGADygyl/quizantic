@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AnswerController;
 use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\TopicController;
 use Illuminate\Support\Facades\Route;
@@ -21,3 +22,4 @@ Route::get('/', function () {
 
 Route::resource('topics', TopicController::class);
 Route::resource('questions', QuestionController::class);
+Route::resource('answers', AnswerController::class);
