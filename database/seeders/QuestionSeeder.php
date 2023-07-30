@@ -20,6 +20,7 @@ class QuestionSeeder extends Seeder
         foreach ($questions_id1 as $question) {
             Question::firstOrCreate([
                 'topic_id' => 1,
+                'level_id' => 1,
                 'text' => $question
             ]);
         }
@@ -31,6 +32,7 @@ class QuestionSeeder extends Seeder
         foreach ($questions_id2 as $question) {
             Question::firstOrCreate([
                 'topic_id' => 2,
+                'level_id' => 1,
                 'text' => $question
             ]);
         }
@@ -42,6 +44,7 @@ class QuestionSeeder extends Seeder
         foreach ($questions_id3 as $question) {
             Question::firstOrCreate([
                 'topic_id' => 3,
+                'level_id' => 2,
                 'text' => $question
             ]);
         }
