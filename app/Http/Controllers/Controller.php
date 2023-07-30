@@ -17,6 +17,6 @@ class Controller extends BaseController
         $topics = Topic::all();
         $levels = Level::all();
 
-        return view('welcome', compact('topics', 'levels'));
+        return view('home', compact('topics', 'levels'));
     }
 }
