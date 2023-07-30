@@ -16,7 +16,6 @@ class AnswerSeeder extends Seeder
         $answers_id1 = [
             'Version 8',
             'Version 9',
-            'Version 10',
             'Version 11',
         ];
 
@@ -27,8 +26,13 @@ class AnswerSeeder extends Seeder
             ]);
         }
 
+        Answer::firstOrCreate([
+            'question_id' => 1,
+            'text' => 'Version 10',
+            'is_correct' => true
+        ]);
+
         $answers_id2 = [
-            'Version 8',
             'Version 9',
             'Version 10',
             'Version 11',
@@ -41,8 +45,13 @@ class AnswerSeeder extends Seeder
             ]);
         }
 
+        Answer::firstOrCreate([
+            'question_id' => 2,
+            'text' => 'Version 8',
+            'is_correct' => true
+        ]);
+
         $answers_id3 = [
-            'Version 8',
             'Version 9',
             'Version 10',
             'Version 11',
@@ -54,5 +63,11 @@ class AnswerSeeder extends Seeder
                 'text' => $answer,
             ]);
         }
+
+        Answer::firstOrCreate([
+            'question_id' => 3,
+            'text' => 'Version 8',
+            'is_correct' => true
+        ]);
     }
 }
